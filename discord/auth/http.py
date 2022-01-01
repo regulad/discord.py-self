@@ -170,7 +170,9 @@ class AuthClient:
             'Sec-Fetch-Mode': 'cors',
             'Sec-Fetch-Site': 'same-origin',
             'User-Agent': self.user_agent,
-            'X-Super-Properties': self.encoded_super_properties
+            'X-Super-Properties': self.encoded_super_properties,
+            'X-Debug-Options': 'bugReporterEnabled',
+            'X-Discord-Locale': 'en-US',
         }
 
         if kwargs.pop('auth', False):
