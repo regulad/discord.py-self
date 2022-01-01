@@ -42,10 +42,14 @@ extras_require = {
     ]
 }
 
+found_packages = setuptools.find_packages()
+
+found_packages.extend(["discord.ext.commands", "discord.ext.tasks"])
+
 setuptools.setup(name='discord.py-self',
       author='Dolfies',
       url='https://github.com/dolfies/discord.py-self',
-      packages=setuptools.find_packages(),
+      packages=found_packages,
       project_urls={
         "Documentation": "https://dolf.ml/discord.py-self",
         "Issue tracker": "https://github.com/dolfies/discord.py-self/issues",
