@@ -48,7 +48,7 @@ extras_require = {
 
 found_packages = find_packages()
 
-found_packages.extend(["discord.ext.tasks", "discord.ext.commands"])
+found_packages.extend(['discord.ext.tasks', 'discord.ext.commands'])
 
 setup(name='discord.py-self',
       author='Dolfies',
