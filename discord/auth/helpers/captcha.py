@@ -36,7 +36,6 @@ try:
     has_flask = True
 except ImportError:
     has_flask = False
-    Flask = object
 
 try:
     import cryptography
@@ -141,7 +140,7 @@ class CaptchaHandler:
         """|coro|
 
         An abstract method that is called a bit before a captcha token is required.
-
+        
         It's meant to signal the handler to generate a token if there isn't one
         so there isn't a delay if :meth:`fetch_token` is called.
         """
