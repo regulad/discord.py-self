@@ -41,7 +41,7 @@ extras_require = {
         'sphinxcontrib-websupport',
     ],
     'server': [
-        'flask>=2.0.2,<3',
+        'flask[async]>=2.0.2,<3',
         'cryptography>=36.0.1,<37'
     ]
 }
