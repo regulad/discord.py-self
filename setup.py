@@ -39,6 +39,10 @@ extras_require = {
         'sphinx==3.0.3',
         'sphinxcontrib_trio==1.1.2',
         'sphinxcontrib-websupport',
+    ],
+    'server': [
+        'flask>=2.0.2,<3',
+        'cryptography>=36.0.1,<37'
     ]
 }
 
